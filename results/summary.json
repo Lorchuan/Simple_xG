@@ -1,0 +1,118 @@
+{
+  "seed": 20261013,
+  "total_valid_shots": 9907,
+  "nonpenalty_shots": 9816,
+  "penalty_shots": 91,
+  "split": {
+    "validation_start": "2016-02-02",
+    "test_start": "2016-04-10",
+    "invalid_excluded": 1
+  },
+  "split_summary": {
+    "train": {
+      "matches": 230,
+      "nonpenalty_shots": 5851,
+      "nonpenalty_goals": 532,
+      "first_date": "2015-08-08",
+      "last_date": "2016-01-24"
+    },
+    "validation": {
+      "matches": 90,
+      "nonpenalty_shots": 2336,
+      "nonpenalty_goals": 215,
+      "first_date": "2016-02-02",
+      "last_date": "2016-04-09"
+    },
+    "test": {
+      "matches": 60,
+      "nonpenalty_shots": 1629,
+      "nonpenalty_goals": 166,
+      "first_date": "2016-04-10",
+      "last_date": "2016-05-17"
+    }
+  },
+  "selected": {
+    "geometry": {
+      "model": "geometry",
+      "C": 0.01,
+      "validation_log_loss": 0.2878917508560916
+    },
+    "context": {
+      "model": "context",
+      "C": 10.0,
+      "validation_log_loss": 0.2817654509569934
+    }
+  },
+  "metrics": {
+    "constant": {
+      "log_loss": 0.329948461651512,
+      "brier": 0.09163930976600548,
+      "auc": 0.5,
+      "mean_xg": 0.090924628268672,
+      "goal_rate": 0.10190300798035605,
+      "sum_xg": 148.1162194496667,
+      "goals": 166
+    },
+    "geometry": {
+      "log_loss": 0.2983905296561243,
+      "brier": 0.08550846497483522,
+      "auc": 0.7374062209192204,
+      "mean_xg": 0.09249977156803657,
+      "goal_rate": 0.10190300798035605,
+      "sum_xg": 150.68212788433158,
+      "goals": 166
+    },
+    "context": {
+      "log_loss": 0.2884887792242878,
+      "brier": 0.08322352802941214,
+      "auc": 0.7619390755091453,
+      "mean_xg": 0.09113133027017697,
+      "goal_rate": 0.10190300798035605,
+      "sum_xg": 148.4529370101183,
+      "goals": 166
+    },
+    "context_calibrated": {
+      "log_loss": 0.2900177769169988,
+      "brier": 0.08355088006050715,
+      "auc": 0.7619390755091453,
+      "mean_xg": 0.09068188112012013,
+      "goal_rate": 0.10190300798035605,
+      "sum_xg": 147.72078434467568,
+      "goals": 166
+    }
+  },
+  "match_bootstrap_95ci": {
+    "log_loss": [
+      0.25930970483278526,
+      0.3199989771487896
+    ],
+    "brier": [
+      0.07306573476987158,
+      0.09384723157707187
+    ],
+    "auc": [
+      0.729456116125496,
+      0.7952604419530392
+    ],
+    "brier_gain_vs_constant": [
+      0.004616390381197815,
+      0.012141890954496012
+    ]
+  },
+  "penalties": {
+    "train_n": 55,
+    "train_goals": 47,
+    "test_n": 20,
+    "test_goals": 14,
+    "beta_1_1_posterior_mean": 0.8421052631578947,
+    "test_brier": 0.23019390581717455
+  },
+  "train_goal_rate": 0.09092462826867202,
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.9.1",
+    "numpy": "2.2.6",
+    "pandas": "3.0.6"
+  },
+  "elapsed_seconds": 9.07078760000877
+}

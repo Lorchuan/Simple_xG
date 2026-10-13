@@ -1,0 +1,11 @@
+__pycache__/
+.venv/
+.ipynb_checkpoints/
+qa/
+*.zip
+data/raw_events/
+data/shots.csv
+data/shots_features.csv
+data/matches.json
+results/test_predictions.csv
+verify_demo.cjs

@@ -1,0 +1,50 @@
+{
+  "features": [
+    "numeric__distance",
+    "numeric__angle",
+    "category__body_part_Head",
+    "category__body_part_Left Foot",
+    "category__body_part_Other",
+    "category__body_part_Right Foot",
+    "category__shot_type_Free Kick",
+    "category__shot_type_Open Play",
+    "binary__under_pressure",
+    "binary__first_time"
+  ],
+  "coef": [
+    -0.9846423193519167,
+    0.35151696881801536,
+    -1.2142400773508664,
+    -0.20535157803475088,
+    0.002449587477879666,
+    0.06620551031393637,
+    -0.350805478607767,
+    -1.000131078986028,
+    -0.28800588185356907,
+    -0.28755265036806965
+  ],
+  "intercept": -1.3697108925914137,
+  "numeric_mean": [
+    19.26213913827345,
+    0.43875070304717556
+  ],
+  "numeric_scale": [
+    8.32376025054675,
+    0.276736931347652
+  ],
+  "categories": [
+    [
+      "Head",
+      "Left Foot",
+      "Other",
+      "Right Foot"
+    ],
+    [
+      "Free Kick",
+      "Open Play"
+    ]
+  ],
+  "calibration_slope": 0.7773074359230836,
+  "calibration_intercept": -0.4604026344994959,
+  "penalty_probability": 0.8421052631578947
+}
